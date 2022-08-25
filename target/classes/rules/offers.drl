@@ -1,3 +1,5 @@
+package rules 
+
 import com.ouardi.DroolsDemo.PaymentOffer
 
 rule "Offer for min_offer"
