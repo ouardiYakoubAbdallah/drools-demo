@@ -1,0 +1,24 @@
+import com.ouardi.DroolsDemo.PaymentOffer
+
+rule "Offer for min_offer"
+	when
+		offerInstance: PaymentOffer(channel=="min_offer")
+	then
+		offerInstance.setDiscount(7);
+	end
+	
+rule "Offer for med_offer"
+	when
+		offerInstance: PaymentOffer(channel=="med_offer")
+	then
+		offerInstance.setDiscount(20);
+	end
+	
+rule "Offer for big_offer"
+	when
+		offerInstance: PaymentOffer(channel=="big_offer")
+	then
+		offerInstance.setDiscount(25);
+	end
+	
+	
